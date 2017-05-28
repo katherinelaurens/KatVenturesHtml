@@ -1,0 +1,19 @@
+{
+  "name": "katventures",
+  "version": "1.0.0",
+  "description": "katherine's blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katherinelaurens/KatVenturesHtml.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katherinelaurens/KatVenturesHtml/issues"
+  },
+  "homepage": "https://github.com/katherinelaurens/KatVenturesHtml#readme"
+}

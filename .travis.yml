@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "7"
+
+sudo: required
+
+services:
+  - docker
+
+script: npm build
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    - shaun@laurens.co
+  on_success: always
+  on_failure: always
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  - docker build -t shaunpmc/katventures:latest .
+  - docker push shaunpmc/katventures:latest
